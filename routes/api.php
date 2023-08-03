@@ -17,12 +17,3 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-
-
-// end point to register/signup a new user in our application
-Route::post('/register',
-    [
-        UserController::class, 'register'
-    ]
-);

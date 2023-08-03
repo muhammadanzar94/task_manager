@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\SignUpRequest;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -19,8 +20,10 @@ class UserController extends Controller {
      */
     public function register(Request $request) {
 
+        print_r("i am here");
+        die;
         try {
-            $inputs = $request->get('data');
+            $inputs = $request->all();
             $result = User::saveNewUser([
                 'email' => $inputs['email'],
                 'password' =>  Hash::make($inputs['password']),
