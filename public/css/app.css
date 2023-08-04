@@ -2,13 +2,15 @@
 
 /* Styling for the task cards */
 .card {
-    margin-bottom: 20px;
+    margin: 20px auto; /* Add margin for spacing and centering */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #34495e; /* Light Navy Blue */
     color: white; /* Text color */
     padding: 15px; /* Add padding to the card */
     border-radius: 10px; /* Rounded corners */
     transition: transform 0.2s, box-shadow 0.2s; /* Transition effect for hover */
+    width: 70%; /* Set a fixed width for the cards */
+    background-color: {{ getRandomDarkColor() }}
 }
 
 .card:hover {

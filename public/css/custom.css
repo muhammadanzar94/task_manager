@@ -1,0 +1,21 @@
+/* resources/css/custom.css */
+
+/* Top banner styles */
+.top-banner {
+    background-color: #3498db; /* Blue color for the banner */
+    color: white; /* Text color */
+    padding: 10px 0; /* Vertical padding */
+    text-align: center; /* Center text */
+    margin-top: 10px;
+    margin-bottom: 10%; 
+}
+
+.top-banner h1 {
+    margin: 10; /* Remove margin to avoid extra spacing */
+}
+
+/* Rest of your existing styles */
+.card {
+    /* ... */
+}
+/* ... */

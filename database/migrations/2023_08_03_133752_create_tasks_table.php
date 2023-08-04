@@ -17,7 +17,7 @@ class CreateTasksTable extends Migration
             $table->id();
             $table->uuid('uuid')->unique();
             $table->foreignId('user_id')->constrained('users');
-            $table->string('name');
+            $table->string('name', 1024);
             $table->timestamps();
         });
     }
