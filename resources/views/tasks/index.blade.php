@@ -16,6 +16,6 @@
                 </div>
             @endforeach
         </div>
-        <button id="delete-all" class="btn btn-danger delete-all-button">Delete All</button>
+        <button id="delete-selected" class="btn btn-danger delete-selected-button">Delete Selected</button>
     </div>
 @endsection

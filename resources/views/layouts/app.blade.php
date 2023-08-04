@@ -12,21 +12,29 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const cards = document.querySelectorAll('.selectable-card');
-            const deleteAllButton = document.getElementById('delete-all');
+            const deleteSelectedButton = document.getElementById('delete-selected');
 
             cards.forEach(card => {
                 card.addEventListener('click', function () {
                     card.classList.toggle('selected');
-                    updateDeleteAllButtonVisibility();
+                    updateDeleteSelectedButtonVisibility();
                 });
             });
 
-            function updateDeleteAllButtonVisibility() {
+            deleteSelectedButton.addEventListener('click', function () {
+                const selectedCards = document.querySelectorAll('.selectable-card.selected');
+                selectedCards.forEach(card => {
+                    card.remove();
+                });
+                updateDeleteSelectedButtonVisibility();
+            });
+
+            function updateDeleteSelectedButtonVisibility() {
                 const selectedCards = document.querySelectorAll('.selectable-card.selected');
                 if (selectedCards.length > 0) {
-                    deleteAllButton.style.display = 'block';
+                    deleteSelectedButton.style.display = 'block';
                 } else {
-                    deleteAllButton.style.display = 'none';
+                    deleteSelectedButton.style.display = 'none';
                 }
             }
         });
