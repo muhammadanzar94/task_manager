@@ -7,7 +7,11 @@
         <div class="top-banner">
             <h1>Tasks Management System</h1>
         </div>
-        <button id="delete-selected" class="btn btn-danger delete-selected-button">Delete Selected</button>
+        <div class="create-task">
+            <button id="create-task" class="btn btn-primary btn-sm create-task-button">Create Task</button>
+            <input type="text" id="task-name" class="task-name-input" placeholder="Enter task name">
+        </div>
+        <button id="delete-selected" class="btn btn-danger delete-selected-button" style="display: none;">Delete Selected</button>
         <div class="card-container">
             @foreach($tasks as $task)
                 <div class="card selectable-card">

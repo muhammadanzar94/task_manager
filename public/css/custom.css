@@ -59,3 +59,27 @@
 .delete-selected-button:hover {
     background-color: #c0392b;
 }
+
+
+
+/* public/css/app.css */
+
+/* Styling for the "Create Task" section */
+.create-task {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.create-task-button {
+    margin-right: 10px;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.task-name-input {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}

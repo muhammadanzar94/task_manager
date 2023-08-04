@@ -13,6 +13,8 @@
         document.addEventListener('DOMContentLoaded', function () {
             const cards = document.querySelectorAll('.selectable-card');
             const deleteSelectedButton = document.getElementById('delete-selected');
+            const createTaskButton = document.getElementById('create-task');
+            const taskNameInput = document.getElementById('task-name');
 
             cards.forEach(card => {
                 card.addEventListener('click', function () {
@@ -27,6 +29,28 @@
                     card.remove();
                 });
                 updateDeleteSelectedButtonVisibility();
+            });
+
+
+            createTaskButton.addEventListener('click', function () {
+                const taskName = taskNameInput.value;
+                if (taskName.trim() !== '') {
+                    const newCard = document.createElement('div');
+                    newCard.classList.add('card', 'selectable-card');
+                    newCard.innerHTML = `
+                        <div class="card-body">
+                            <h5 class="card-title">${taskName}</h5>
+                        </div>
+                    `;
+                    newCard.addEventListener('click', function () {
+                        newCard.classList.toggle('selected');
+                        updateDeleteSelectedButtonVisibility();
+                    });
+
+                    document.querySelector('.card-container').appendChild(newCard);
+                    taskNameInput.value = '';
+                    updateDeleteSelectedButtonVisibility();
+                }
             });
 
             function updateDeleteSelectedButtonVisibility() {
