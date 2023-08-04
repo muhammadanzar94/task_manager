@@ -12,6 +12,7 @@
     /* Center text */
     margin-top: 10px;
     margin-bottom: 10%;
+    position: relative; /* Add relative positioning */
 }
 
 .top-banner h1 {
@@ -32,4 +33,29 @@
 .selectable-card.selected {
     border: 4px solid #e74c3c;
     /* Highlight color */
+}
+
+/* Position and style the Delete Selected button */
+#delete-selected {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+/* resources/css/custom.css */
+
+/* Add custom styling for the Delete Selected button */
+.delete-selected-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-selected-button:hover {
+    background-color: #c0392b;
 }

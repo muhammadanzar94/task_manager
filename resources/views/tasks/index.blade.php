@@ -6,6 +6,7 @@
     <div class="container">
         <div class="top-banner">
             <h1>Tasks Management System</h1>
+            <button id="delete-selected" class="btn btn-danger delete-selected-button">Delete Selected</button>
         </div>
         <div class="card-container">
             @foreach($tasks as $task)
@@ -16,6 +17,5 @@
                 </div>
             @endforeach
         </div>
-        <button id="delete-selected" class="btn btn-danger delete-selected-button">Delete Selected</button>
     </div>
 @endsection
