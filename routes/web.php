@@ -32,5 +32,7 @@ Route::get('/list-tasks', [TaskController::class, 'listTasks'])->middleware('Aut
 
 
 
-
+Route::get('/', function () {
+    return redirect('/list-tasks');
+});
 Route::get('/list-tasks', [TaskController::class, 'index']);
