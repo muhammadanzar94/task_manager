@@ -22,10 +22,15 @@ Route::get('/', function () {
 });
 
 
-Route::get('/register', [UserController::class, 'register'])->uses(SignUpRequest::class);
+Route::get('/register', [UserController::class, 'register']);
 Route::get('/login', [UserController::class, 'login']);
 Route::get('/user', [UserController::class, 'getUser'])->middleware('AuthenticateUser');
 
 
 Route::get('/create-task', [TaskController::class, 'createTask'])->middleware('AuthenticateUser');
 Route::get('/list-tasks', [TaskController::class, 'listTasks'])->middleware('AuthenticateUser');
+
+
+
+
+Route::get('/list-tasks', [TaskController::class, 'index']);

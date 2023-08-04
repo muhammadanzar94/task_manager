@@ -1,0 +1,37 @@
+/* resources/css/custom.css */
+
+/* Styling for the task cards */
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #34495e; /* Light Navy Blue */
+    color: white; /* Text color */
+    padding: 15px; /* Add padding to the card */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transition effect for hover */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Hover effect to lift the card slightly */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Adjusted box shadow on hover */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    display: block;
+    width: 100%;
+    background-color: #1abc9c; /* Change button color */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #16a085; /* Button color on hover */
+}
