@@ -40,7 +40,7 @@
     display: block;
     margin: 0px 100px auto; /* Center the button horizontally */
     float: right; /* Move the button to the right side */
-    font-size: 16px; /* Increase the font size */
+    font-size: 20px; /* Increase the font size */
     padding: 10px 20px; /* Increase the padding */
     display: none;
 }
@@ -54,6 +54,8 @@
     border-radius: 5px;
     padding: 5px 10px;
     cursor: pointer;
+    margin-left: 10px;
+    font-size: 20px;
 }
 
 .delete-selected-button:hover {
@@ -66,20 +68,27 @@
 
 /* Styling for the "Create Task" section */
 .create-task {
-    margin: 20px;
-    display: flex;
-    align-items: center;
+    display: block;
+    margin: 0px 100px auto;
+    float: left; 
+    font-size: 20px
+    padding: 10px 20px;
 }
 
 .create-task-button {
+    color: white;
     margin-right: 10px;
-    font-size: 14px;
+    font-size: 20px;
     padding: 5px 10px;
-    border-radius: 4px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
 }
 
 .task-name-input {
-    padding: 5px;
+    margin: 20px auto;
+    height: 100px;
     border-radius: 4px;
     border: 1px solid #ccc;
 }
