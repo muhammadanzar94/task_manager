@@ -2,20 +2,34 @@
 
 /* Top banner styles */
 .top-banner {
-    background-color: #3498db; /* Blue color for the banner */
-    color: white; /* Text color */
-    padding: 10px 0; /* Vertical padding */
-    text-align: center; /* Center text */
+    background-color: #3498db;
+    /* Blue color for the banner */
+    color: white;
+    /* Text color */
+    padding: 10px 0;
+    /* Vertical padding */
+    text-align: center;
+    /* Center text */
     margin-top: 10px;
-    margin-bottom: 10%; 
+    margin-bottom: 10%;
 }
 
 .top-banner h1 {
-    margin: 10; /* Remove margin to avoid extra spacing */
+    margin: 10;
+    /* Remove margin to avoid extra spacing */
 }
 
 /* Rest of your existing styles */
 .card {
     /* ... */
 }
+
+/* resources/css/custom.css */
+
 /* ... */
+
+/* Styling for selected cards */
+.selectable-card.selected {
+    border: 4px solid #e74c3c;
+    /* Highlight color */
+}
