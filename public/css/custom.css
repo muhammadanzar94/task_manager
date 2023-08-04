@@ -37,13 +37,13 @@
 
 /* Position and style the Delete Selected button */
 #delete-selected {
+    display: block;
+    margin: 0px 100px auto; /* Center the button horizontally */
+    float: right; /* Move the button to the right side */
+    font-size: 16px; /* Increase the font size */
+    padding: 10px 20px; /* Increase the padding */
     display: none;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
 }
-
 /* resources/css/custom.css */
 
 /* Add custom styling for the Delete Selected button */
