@@ -69,9 +69,9 @@
 /* Styling for the "Create Task" section */
 .create-task {
     display: block;
-    margin: 0px 100px auto;
+    margin: 0px auto;
     float: left; 
-    font-size: 20px
+    font-size: 20px;
     padding: 10px 20px;
 }
 
